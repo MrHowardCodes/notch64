@@ -118,7 +118,7 @@ footer {
 .maincontain .col {width: 100%;}
 .maincontain h3 { font-size: 1.3vh}
 .ttv {background-size:8em !important;}
-.twt {background-size: 5em !important;}
+.x {background-size: 5em !important;}
 .ig {background-size: 5em !important;}
 .tb {background-size: 5em !important;}
 .fb {background-size: 6em !important;}
@@ -174,9 +174,9 @@ footer {
 
 }
 
-.twt {
+.x {
   background: #000;
-  background-image: url("../img/x.png");
+  background-image: url("../img/x.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40% auto;
