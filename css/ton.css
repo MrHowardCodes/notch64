@@ -124,6 +124,7 @@ footer {
 .fb {background-size: 6em !important;}
 .yt {background-size: 5em !important;}
 .ttok {background-size: 5em !important;}
+.kick {background-size: 12em !important;}
 .gaming {background-position:right !important;}
 .music {background-position: center !important;}
 .dev {background-position: center !important;}
@@ -226,6 +227,15 @@ footer {
   background-repeat: no-repeat;
   background-size: 100% auto;
   border: 2px white solid;
+}
+
+.kick {
+    background: #000000;
+    background-image: url("../img/kick.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border: 2px white solid;  
 }
 
 .ttok {
