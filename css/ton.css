@@ -20,7 +20,7 @@ footer {
   position: relative;
   text-align: center;
   font-size: 1.6vw;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   padding: 50px 0px 10px 0px;
 }
 
@@ -30,7 +30,6 @@ footer {
 
 .col2 {
   padding: 5px;
-
 }
 
 .col3 {
@@ -51,7 +50,6 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
   height: 300px;
-
 }
 
 .maincontain_social {
@@ -62,28 +60,24 @@ footer {
   justify-content: space-between;
   padding-top: 20px;
   height: 300px;
-
 }
 
 .maincontain .col {
   width: 32%;
-  height:400px;
+  height: 400px;
   align-items: stretch;
-
 }
 
 .maincontain_social .col2 {
   width: 10%;
-  height:100px;
+  height: 100px;
   align-items: stretch;
-
 }
 
 .maincontain_community .col3 {
   width: 100%;
   height: auto;
 }
-
 
 @media only screen and (max-width: 40em) {
   .maincontain {
@@ -104,36 +98,63 @@ footer {
     margin: 0 0 10px 0;
     padding: 0 0 20px 0;
   }
-
 }
 @media only screen and (max-width: 80em) {
   .maincontain .col {
-
-    height:auto !important;  
+    height: auto !important;
   }
-  
 }
-
+/* Mobile */
 @media only screen and (max-width: 40em) {
-.maincontain .col {width: 100%;}
-.maincontain h3 { font-size: 1.3vh}
-.ttv {background-size:8em !important;}
-.twt {background-size: 5em !important;}
-.ig {background-size: 5em !important;}
-.tb {background-size: 5em !important;}
-.fb {background-size: 6em !important;}
-.yt {background-size: 5em !important;}
-.ttok {background-size: 5em !important;}
-.gaming {background-position:right !important;}
-.music {background-position: center !important;}
-.dev {background-position: center !important;}
-.community {background-size: 70% !important;}
-.maincontain_social .col2 {width: 50%;}
-.maincontain_community h3 {font-size: 1.3vh;}
-
-
+  .maincontain .col {
+    width: 100%;
+  }
+  .maincontain h3 {
+    font-size: 1.3vh;
+  }
+  .ttv {
+    background-size: 8em !important;
+  }
+  .bsky {
+    background-size: 5em !important;
+  }
+  .ig {
+    background-size: 5em !important;
+  }
+  .sc {
+    background-size: 12em !important;
+  }
+  .fb {
+    background-size: 6em !important;
+  }
+  .yt {
+    background-size: 5em !important;
+  }
+  .ttok {
+    background-size: 5em !important;
+  }
+  .dsc {
+    background-size: 9em !important;
+  }
+  .gaming {
+    background-position: right !important;
+  }
+  .music {
+    background-position: center !important;
+  }
+  .dev {
+    background-position: center !important;
+  }
+  .community {
+    background-size: 70% !important;
+  }
+  .maincontain_social .col2 {
+    width: 50%;
+  }
+  .maincontain_community h3 {
+    font-size: 1.3vh;
+  }
 }
-
 
 /* Item Stylig */
 .gaming {
@@ -170,15 +191,14 @@ footer {
   background-repeat: no-repeat;
   background-size: 80%;
   border: 2px white solid;
-
 }
 
-.twt {
-  background: #1da1f2;
-  background-image: url("../img/twt.png");
+.bsky {
+  background: #fff;
+  background-image: url("../img/bsky.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 60% auto;
+  background-size: 80% auto;
   border: 2px white solid;
 }
 
@@ -191,17 +211,17 @@ footer {
   border: 2px white solid;
 }
 
-.tb {
-  background: #34526f;
-  background-image: url("../img/tb.png");
+.dsc {
+  background: #6b87c8;
+  background-image: url("../img/discord.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 45% auto;
+  background-size: 100% auto;
   border: 2px white solid;
 }
 
 .fb {
-  background: #009BD1;
+  background: #009bd1;
   background-image: url("../img/fb.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -210,7 +230,7 @@ footer {
 }
 
 .yt {
-  background: #FF4040;
+  background: #ff4040;
   background-image: url("../img/yt.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -218,9 +238,8 @@ footer {
   border: 2px white solid;
 }
 
-
 .ttv {
-  background: #DFD0EA;
+  background: #dfd0ea;
   background-image: url("../img/ttv.gif");
   background-position: center;
   background-repeat: no-repeat;
@@ -233,8 +252,17 @@ footer {
   background-image: url("../img/ttok.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 70%;
   background-color: #000;
+  border: 2px white solid;
+}
+
+.sc {
+  background-image: url("../img/sc.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-color: #d8d3d3;
   border: 2px white solid;
 }
 
@@ -242,7 +270,6 @@ footer {
 
 p {
   font-size: 0.6vw;
-
 }
 
 a {
@@ -250,59 +277,64 @@ a {
 }
 
 h1 {
-  font-size:5vw;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 5vw;
+  font-family: "Open Sans", sans-serif;
   font-weight: lighter;
   text-align: center;
   padding: 50px;
 }
 
 h2 {
-  font-size:2vw;
-  font-family: 'Press Start 2P', cursive;
+  font-size: 2vw;
+  font-family: "Press Start 2P", cursive;
   text-align: center;
   padding: 0px 0px 20px 0px;
 }
 
 h3 {
   font-size: 1.3vw;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   object-fit: cover;
-  
 }
 
 h4 {
-  font-size: 2.0vw;
-  font-family: 'Press Start 2P', cursive;
+  font-size: 2vw;
+  font-family: "Press Start 2P", cursive;
   padding-top: 10px;
   object-fit: cover;
-
 }
 
-.title{
+.title {
   color: white;
   text-shadow: 1px 1px 4px #000000;
 }
 /* Text Styles */
 .n64txt {
-  font-family: myriad-pro,sans-serif;
-font-weight: 800;
-font-style:normal;
+  font-family: myriad-pro, sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
-
 
 .howco-gradient-wipe {
   text-align: center;
-  
-  background: linear-gradient(120deg, #957EBA 15%, #27BCD8 30%, #DEAFD1 50%, #2E59A9 65%, #4FC3CE 85%, #957EBA 90%);
+
+  background: linear-gradient(
+    120deg,
+    #957eba 15%,
+    #27bcd8 30%,
+    #deafd1 50%,
+    #2e59a9 65%,
+    #4fc3ce 85%,
+    #957eba 90%
+  );
   background-size: 200% auto;
-  
+
   color: #000;
   background-clip: text;
-  
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
+
   animation: shine 4s linear infinite;
   animation-play-state: running;
   animation-timing-function: ease;
@@ -310,5 +342,75 @@ font-style:normal;
     to {
       background-position: 200% center;
     }
+  }
+}
+
+/* minecraft splash text effect */
+@media only screen and (max-width: 40em) {
+
+  #splash {
+    position: relative;
+    left: 0px;
+    bottom: 20px;
+    animation: splash .25s;
+    animation-direction:alternate-reverse;
+    animation-iteration-count: infinite;
+
+  }
+  h3 {font-size: 0.7em;}
+
+  /* Standard CSS Keyframes */
+  @keyframes splash {
+    0% {
+      transform: scale(0.875) rotate(-5deg);
+    }
+    100% {
+      transform: scale(1) rotate(-5deg);
+    }
+  }
+
+  /* For older WebKit browsers (like older versions of Safari) */
+  @-webkit-keyframes splash {
+    0% {
+      transform: scale(0.875) rotate(-5deg);
+    }
+    100% {
+      transform: scale(1) rotate(-5deg);
+    }
+  }
+
+}
+
+#splash {
+	text-align: center;
+	color: #eaff00;
+	text-shadow: 1px 1px 0px #000;
+	position: relative;
+	left: 200px;
+	bottom: 50px;
+	animation: splash .25s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+
+/* Standard CSS Keyframes */
+@keyframes splash {
+  0% {
+    transform: scale(0.875) rotate(-20deg); 
+  }
+  100% {
+    transform: scale(1) rotate(-20deg); 
+  }
+}
+
+/* For older WebKit browsers (like older versions of Safari) */
+@-webkit-keyframes splash {
+  0% {
+    transform: scale(0.875) rotate(-20deg); 
+  }
+  100% {
+    transform: scale(1) rotate(-20deg); 
   }
 }
