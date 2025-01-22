@@ -115,14 +115,14 @@ footer {
   .ttv {
     background-size: 8em !important;
   }
-  .x {
+  .bsky {
     background-size: 5em !important;
   }
   .ig {
     background-size: 5em !important;
   }
-  .tb {
-    background-size: 5em !important;
+  .sc {
+    background-size: 12em !important;
   }
   .fb {
     background-size: 6em !important;
@@ -133,8 +133,8 @@ footer {
   .ttok {
     background-size: 5em !important;
   }
-  .kick {
-    background-size: 12em !important;
+  .dsc {
+    background-size: 9em !important;
   }
   .gaming {
     background-position: right !important;
@@ -193,12 +193,12 @@ footer {
   border: 2px white solid;
 }
 
-.x {
-  background: #000;
-  background-image: url("../img/x.gif");
+.bsky {
+  background: #fff;
+  background-image: url("../img/bsky.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 40% auto;
+  background-size: 80% auto;
   border: 2px white solid;
 }
 
@@ -216,7 +216,7 @@ footer {
   background-image: url("../img/discord.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 45% auto;
+  background-size: 100% auto;
   border: 2px white solid;
 }
 
@@ -247,21 +247,12 @@ footer {
   border: 2px white solid;
 }
 
-.kick {
-  background: #000000;
-  background-image: url("../img/kick.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  border: 2px white solid;
-}
-
 .ttok {
   background: #c4c4c4;
   background-image: url("../img/ttok.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 70%;
   background-color: #000;
   border: 2px white solid;
 }
@@ -351,5 +342,50 @@ h4 {
     to {
       background-position: 200% center;
     }
+  }
+}
+
+/* minecraft splash text effect */
+
+#splash {
+	text-align: center;
+	color: #eaff00;
+	text-shadow: 1px 1px 0px #000;
+	position: relative;
+	left: 200px;
+	bottom: 50px;
+	animation: splash .25s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+@media only screen and (max-width: 40em) {
+  
+  #splash {
+    position: relative;
+	left: 100px;
+  
+}
+h3 {font-size: 0.7em;}
+
+}
+
+/* Standard CSS Keyframes */
+@keyframes splash {
+  0% {
+    transform: scale(0.875) rotate(-20deg); 
+  }
+  100% {
+    transform: scale(1) rotate(-20deg); 
+  }
+}
+
+/* For older WebKit browsers (like older versions of Safari) */
+@-webkit-keyframes splash {
+  0% {
+    transform: scale(0.875) rotate(-20deg); 
+  }
+  100% {
+    transform: scale(1) rotate(-20deg); 
   }
 }
