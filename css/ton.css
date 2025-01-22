@@ -346,6 +346,40 @@ h4 {
 }
 
 /* minecraft splash text effect */
+@media only screen and (max-width: 40em) {
+
+  #splash {
+    position: relative;
+    left: 0px;
+    bottom: 20px;
+    animation: splash .25s;
+    animation-direction:alternate-reverse;
+    animation-iteration-count: infinite;
+
+  }
+  h3 {font-size: 0.7em;}
+
+  /* Standard CSS Keyframes */
+  @keyframes splash {
+    0% {
+      transform: scale(0.875) rotate(-5deg);
+    }
+    100% {
+      transform: scale(1) rotate(-5deg);
+    }
+  }
+
+  /* For older WebKit browsers (like older versions of Safari) */
+  @-webkit-keyframes splash {
+    0% {
+      transform: scale(0.875) rotate(-5deg);
+    }
+    100% {
+      transform: scale(1) rotate(-5deg);
+    }
+  }
+
+}
 
 #splash {
 	text-align: center;
@@ -359,16 +393,7 @@ h4 {
 	animation-iteration-count: infinite;
 }
 
-@media only screen and (max-width: 40em) {
-  
-  #splash {
-    position: relative;
-	left: 100px;
-  
-}
-h3 {font-size: 0.7em;}
 
-}
 
 /* Standard CSS Keyframes */
 @keyframes splash {
