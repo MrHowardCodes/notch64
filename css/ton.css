@@ -36,6 +36,10 @@ footer {
   padding: 20px;
 }
 
+#pagecontainer {
+  overflow-x: hidden;
+}
+
 .maincontain {
   display: flex;
   display: -webkit-flex;
@@ -344,13 +348,46 @@ h4 {
     }
   }
 }
-
 /* minecraft splash text effect */
+#splash {
+	text-align: center;
+	color: #eaff00;
+	text-shadow: 1px 1px 0px #000;
+	position: relative;
+	left: 200px;
+	bottom: 50px;
+	animation: splash .25s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+/* Standard CSS Keyframes */
+@keyframes splash {
+  0% {
+    transform: scale(0.875) rotate(-20deg); 
+  }
+  100% {
+    transform: scale(1) rotate(-20deg); 
+  }
+}
+
+/* For older WebKit browsers (like older versions of Safari) */
+@-webkit-keyframes splash {
+  0% {
+    transform: scale(0.875) rotate(-20deg); 
+  }
+  100% {
+    transform: scale(1) rotate(-20deg); 
+  }
+}
+
+
 @media only screen and (max-width: 40em) {
 
   #splash {
     position: relative;
-    left: 0px;
+    left: 0;
     bottom: 20px;
     animation: splash .25s;
     animation-direction:alternate-reverse;
@@ -379,38 +416,4 @@ h4 {
     }
   }
 
-}
-
-#splash {
-	text-align: center;
-	color: #eaff00;
-	text-shadow: 1px 1px 0px #000;
-	position: relative;
-	left: 200px;
-	bottom: 50px;
-	animation: splash .25s;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-}
-
-
-
-/* Standard CSS Keyframes */
-@keyframes splash {
-  0% {
-    transform: scale(0.875) rotate(-20deg); 
-  }
-  100% {
-    transform: scale(1) rotate(-20deg); 
-  }
-}
-
-/* For older WebKit browsers (like older versions of Safari) */
-@-webkit-keyframes splash {
-  0% {
-    transform: scale(0.875) rotate(-20deg); 
-  }
-  100% {
-    transform: scale(1) rotate(-20deg); 
-  }
 }
